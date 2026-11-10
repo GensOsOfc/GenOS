@@ -55,4 +55,4 @@ genos-actualizar --revertir
 
 ## Créditos
 
-Proyecto de Duvan Esteban Chaparro Castro, con la ayuda de Claude, de Anthropic. Usa Debian, XFCE, Plank, Rofi, xrdp y el tema WhiteSur de vinceliuice, que se descargan de sus repos oficiales y conservan su licencia.
+Proyecto de GenOSDev, Usa Debian, XFCE, Plank, Rofi, xrdp y el tema WhiteSur de vinceliuice, que se descargan de sus repos oficiales y conservan su licencia.
