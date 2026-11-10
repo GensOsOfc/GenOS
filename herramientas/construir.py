@@ -18,7 +18,7 @@ def leer(nombre):
 def main():
     version = open(os.path.join(RAIZ, "VERSION")).read().strip()
     i18n = "".join(open(p, encoding="utf-8").read() for p in sorted(glob.glob(os.path.join(SRC, "traducciones", "*.py"))))
-    with open(os.path.join(SRC, "genos_i18n.py"), "w", encoding="utf-8") as f:
+    with open(os.path.join(SRC, "genos_i18n.py"), "w", encoding="utf-8", newline="\n") as f:
         f.write(i18n)
     plantilla = leer("estetica.main.tpl")
     plantilla = re.sub(r'^GENOS_VERSION=".*"$', 'GENOS_VERSION="%s"' % version, plantilla, count=1, flags=re.M)
@@ -34,11 +34,11 @@ def main():
             contenido = re.sub(r'^GENOS_VERSION = ".*"$', 'GENOS_VERSION = "%s"' % version, contenido, count=1, flags=re.M)
         plantilla = plantilla.replace(hueco, contenido + marca + "_FIN")
     salida = os.path.join(RAIZ, "xfce-estetica.sh")
-    with open(salida, "w", encoding="utf-8") as f:
+    with open(salida, "w", encoding="utf-8", newline="\n") as f:
         f.write(plantilla)
     os.chmod(salida, 0o755)
     h = hashlib.sha256(open(salida, "rb").read()).hexdigest()
-    with open(salida + ".sha256", "w") as f:
+    with open(salida + ".sha256", "w", newline="\n") as f:
         f.write("%s  xfce-estetica.sh\n" % h)
     print("xfce-estetica.sh %s (%d líneas) sha256 %s" % (version, plantilla.count("\n"), h[:12]))
 

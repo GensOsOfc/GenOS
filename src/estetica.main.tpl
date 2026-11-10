@@ -447,4 +447,6 @@ Widgets en el escritorio: reloj y sistema vienen activos; Calendario, Red, Notas
 Configuración > Widgets. Ctrl+Alt+W los oculta o los muestra. Exporta tu tema con genos-exportar.
 Para que la barra quede como pastillas, en Panel Preferences > Items deja: el menú, la lista de
 ventanas, un Separator con Expand a cada lado del reloj, y la bandeja a la derecha.
+
+Redes: YouTube youtube.com/@geniousmods · GitHub github.com/GenOSDev · Telegram t.me/channelgenioushack · TikTok tiktok.com/@gn_dev_logic
 FIN

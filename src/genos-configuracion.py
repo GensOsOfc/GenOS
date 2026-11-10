@@ -1200,7 +1200,7 @@ class Vista(Gtk.DrawingArea):
         cr.show_text(titulo)
         cr.set_font_size(8 * k)
         cr.move_to(tx + 10 * k, ty + 32 * k)
-        cr.show_text("duvan@genos:~$ genos-fondo")
+        cr.show_text("genosdev@genos:~$ genos-fondo")
         cr.set_source_rgba(*sel[:3], 1)
         cr.rectangle(tx + 10 * k, ty + 40 * k, 7 * k, 11 * k)
         cr.fill()
@@ -2386,11 +2386,17 @@ class Ventana(Gtk.Window):
         t = Gtk.Label(xalign=0)
         t.set_markup("<span size='16000' weight='bold'>GenOS %s</span>" % GENOS_VERSION)
         caja.pack_start(t, False, False, 0)
-        for linea in ("Proyecto de Duvan Esteban Chaparro Castro.",
+        for linea in ("Proyecto de GenOsDev.",
                       "Diseñado y programado con la ayuda de Claude, de Anthropic.",
                       "Se apoya en software libre: Debian, XFCE, Plank, Rofi, xrdp, Thunar, Mousepad y el tema WhiteSur. "
                       "Cada proyecto es de sus autores y conserva su licencia."):
             caja.pack_start(Gtk.Label(label=linea, xalign=0, wrap=True, width_chars=46, max_width_chars=46), False, False, 0)
+        redes = Gtk.Label(xalign=0)
+        redes.set_markup("YouTube: <a href='https://youtube.com/@geniousmods'>@geniousmods</a>\n"
+                         "GitHub: <a href='https://github.com/GenOSDev'>GenOSDev</a>\n"
+                         "Telegram: <a href='https://t.me/channelgenioushack'>channelgenioushack</a>\n"
+                         "TikTok: <a href='https://www.tiktok.com/@gn_dev_logic'>@gn_dev_logic</a>")
+        caja.pack_start(redes, False, False, 0)
         d.show_all()
         d.run()
         d.destroy()

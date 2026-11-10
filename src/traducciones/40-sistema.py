@@ -89,8 +89,8 @@ _TR.update({
     "Copiar información": ("Copy information", "Copiar informações"),
     "Información copiada.": ("Information copied.", "Informações copiadas."),
     "Créditos": ("Credits", "Créditos"),
-    "Proyecto de Duvan Esteban Chaparro Castro.": ("A project by Duvan Esteban Chaparro Castro.",
-                                                   "Projeto de Duvan Esteban Chaparro Castro."),
+    "Proyecto de GenOsDev.": ("A project by GenOsDev.",
+                              "Projeto de GenOsDev."),
     "Diseñado y programado con la ayuda de Claude, de Anthropic.": ("Designed and programmed with the help of Claude, by Anthropic.",
                                                                       "Projetado e programado com a ajuda do Claude, da Anthropic."),
     "Se apoya en software libre: Debian, XFCE, Plank, Rofi, xrdp, Thunar, Mousepad y el tema WhiteSur. Cada proyecto es de sus autores y conserva su licencia.":
