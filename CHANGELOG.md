@@ -2,6 +2,9 @@
 
 Cada versión empieza con `## número (fecha)`. El actualizador muestra las secciones más nuevas que la versión instalada.
 
+## 2.3 (2026-11-10)
+- Subida de versión a 2.3. Sin cambios funcionales respecto a la 1.2.1.
+
 ## 1.2.1 (2026-11-10)
 - Créditos: autor GenOsDev y enlaces a sus redes (YouTube, GitHub, Telegram y TikTok).
 - El instalador muestra las redes al terminar.

@@ -33,7 +33,7 @@ FONDOS="$HOME/Pictures/GenOs-Fondos"
 BIN="$HOME/.local/bin"
 mkdir -p "$CACHE" "$FONDOS" "$BIN"
 
-GENOS_VERSION="1.2.1"
+GENOS_VERSION="2.3"
 # Primera instalación o actualización: en una actualización no se toca lo que personalizaste
 # (fondo, colores, barra, dock, atajos, terminal). Se fuerza con GENOS_ACTUALIZAR=0 o 1.
 if [ -n "${GENOS_ACTUALIZAR:-}" ]; then
@@ -2006,7 +2006,7 @@ except ImportError:  # sin el módulo todo queda en español
         return s
 
 HOME = os.path.expanduser("~")
-GENOS_VERSION = "1.2.1"
+GENOS_VERSION = "2.3"
 DIR = os.path.join(HOME, "Pictures", "GenOs-Fondos")
 CACHE = os.path.join(HOME, ".cache", "genos-fondo")
 MINIS = os.path.join(CACHE, "minis")
