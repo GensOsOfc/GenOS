@@ -1,0 +1,11 @@
+name: Pruebas
+on: [push, pull_request]
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y shellcheck
+      - run: bash pruebas/probar.sh
+      - name: El instalador subido está al día con src/
+        run: git diff --exit-code xfce-estetica.sh xfce-estetica.sh.sha256
