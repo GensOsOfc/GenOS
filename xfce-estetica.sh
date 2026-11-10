@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# xfce-estetica.sh (GenOS 1.2: sistema de actualizaciones desde GitHub que conserva tu personalización)
+# xfce-estetica.sh (GenOS: sistema de actualizaciones desde GitHub que conserva tu personalización)
 # Estética minimalista para XFCE (Debian en WSL con xrdp): barra superior en pastillas
 # translúcidas, dock con zoom, lanzador en cuadrícula (Rofi) y fondos GenOs.
 # Con cada fondo el diseño se adapta solo: modo oscuro o claro según la imagen y
@@ -33,7 +33,7 @@ FONDOS="$HOME/Pictures/GenOs-Fondos"
 BIN="$HOME/.local/bin"
 mkdir -p "$CACHE" "$FONDOS" "$BIN"
 
-GENOS_VERSION="1.2"
+GENOS_VERSION="1.2.1"
 # Primera instalación o actualización: en una actualización no se toca lo que personalizaste
 # (fondo, colores, barra, dock, atajos, terminal). Se fuerza con GENOS_ACTUALIZAR=0 o 1.
 if [ -n "${GENOS_ACTUALIZAR:-}" ]; then
@@ -2006,7 +2006,7 @@ except ImportError:  # sin el módulo todo queda en español
         return s
 
 HOME = os.path.expanduser("~")
-GENOS_VERSION = "1.2"
+GENOS_VERSION = "1.2.1"
 DIR = os.path.join(HOME, "Pictures", "GenOs-Fondos")
 CACHE = os.path.join(HOME, ".cache", "genos-fondo")
 MINIS = os.path.join(CACHE, "minis")
@@ -6846,7 +6846,7 @@ Selector rápido con miniaturas: Ctrl+Alt+F. Por terminal: genos-fondo NUMERO. C
 propio tema (modo, acento, pastillas, lanzador, notificaciones y terminal).
 Colores > Apariencia: Automático, Claro u Oscuro, color de acento, estilo (Sólido, Cristal, Teñido) y
 cambio automático día y noche. Si la barra se ve desordenada, corre: genos-barra
-GenOS 1.2 busca actualizaciones al entrar (una vez al día) y te avisa con una notificación.
+GenOS busca actualizaciones al entrar (una vez al día) y te avisa con una notificación.
 Por terminal: genos-actualizar, genos-actualizar --cambios, genos-actualizar --instalar.
 Las actualizaciones conservan tu personalización y guardan un respaldo (genos-actualizar --revertir).
 Configuración reemplaza al Gestor de ajustes de XFCE. Reúne la barra, las ventanas, el

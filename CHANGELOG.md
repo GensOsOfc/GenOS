@@ -2,6 +2,12 @@
 
 Cada versión empieza con `## número (fecha)`. El actualizador muestra las secciones más nuevas que la versión instalada.
 
+## 1.2.1 (2026-11-10)
+- Créditos: autor GenOsDev y enlaces a sus redes (YouTube, GitHub, Telegram y TikTok).
+- El instalador muestra las redes al terminar.
+- Compilar en Windows ya no deja el instalador con CRLF. Los `.sh` llevan bit de ejecución.
+- Los mensajes ya no repiten el número de versión.
+
 ## 1.2 (2026-11-10)
 - Actualizaciones desde GitHub: GenOS revisa una vez al día al entrar y avisa con una notificación cuando hay versión nueva.
 - La actualización conserva tu fondo, colores, barra, dock, atajos y terminal. Antes de instalar guarda un respaldo.
